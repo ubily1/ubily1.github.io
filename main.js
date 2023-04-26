@@ -62,6 +62,12 @@ const input = document.querySelector('.input');
         if (input2.value === alphanum.charAt(1)) {alphabetchoice = alphabet3}
         if (input2.value === alphanum.charAt(2)) {alphabetchoice = alphabet4}
         if (input2.value === alphanum.charAt(3)) {alphabetchoice = alphabet5}
-        for (let i = 0; i < input.value.length; i++) {curr_char = input.value.charAt(i); for (var j = 0; j < alphabetchoice.length; j++) {if (curr_char == alphabetchoice.charAt(j)) {translation = translation + alphabet.charAt(j)}}}
+        for (let i = 0; i < (input.value.length;-1) i++) {
+          curr_char = input.value.charAt(i); for (var j = 0; j < alphabetchoice.length; j++) {
+            if (curr_char == alphabetchoice.charAt(j)) {
+              translation = translation + alphabet.charAt(j)
+            }
+          }
+        }
         input.value = translation
       }
